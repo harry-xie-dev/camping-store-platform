@@ -29,7 +29,7 @@ The current phase does not include:
 
 - Backend application code.
 - Frontend application code.
-- Database migrations or schemas.
+- Executable database migrations or a live database implementation.
 - Real customer data.
 - Real sales metrics or business results.
 - Production deployment.
