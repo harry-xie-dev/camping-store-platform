@@ -1,0 +1,7 @@
+campaign_id,campaign_name,channel,start_date,end_date,budget,target_category,clicks,conversions,revenue_attributed
+M001,Summer Camping Starter Kit,Google Ads,2026-03-01,2026-03-21,1200.00,camping utensils,1840,96,2840.75
+M002,Backpack Essentials Promo,Instagram,2026-03-10,2026-03-31,900.00,camping accessories,1425,63,1365.20
+M003,Family Camping Weekend,Email Campaign,2026-04-01,2026-04-14,450.00,camping dinnerware,760,51,2385.50
+M004,Ultralight Cookware Launch,Google Ads,2026-04-05,2026-04-25,1500.00,camping cookware,2110,88,3520.40
+M005,Trail Drinkware Refresh,Organic Search,2026-04-12,2026-04-30,300.00,camping drinkware,980,44,1220.65
+M006,Spring Outdoor Gear Sale,Instagram,2026-04-18,2026-05-02,850.00,camping cookware,1310,57,1988.35

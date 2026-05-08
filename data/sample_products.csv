@@ -1,0 +1,13 @@
+product_id,sku,product_name,category,brand,unit_price,cost,stock_quantity,supplier,active
+P001,CG-UTL-001,Stainless Steel Camping Utensil Set,camping utensils,TrailMate,18.99,7.50,120,Outdoor Supply Co,true
+P002,CG-UTL-002,Titanium Folding Spork,camping utensils,SummitLite,12.49,4.20,90,Summit Wholesale,true
+P003,CG-COOK-001,Compact Camping Cookware Kit,camping cookware,CampForge,39.99,18.75,64,Outdoor Supply Co,true
+P004,CG-COOK-002,Nonstick Portable Fry Pan,camping cookware,CampForge,24.99,10.60,75,Camp Essentials Ltd,true
+P005,CG-BOWL-001,Collapsible Silicone Camping Bowl,camping dinnerware,TrailMate,9.99,3.10,150,Camp Essentials Ltd,true
+P006,CG-MUG-001,Insulated Stainless Camping Mug,camping drinkware,NorthPeak,16.99,6.25,110,NorthPeak Distribution,true
+P007,CG-BTL-001,BPA-Free Trail Water Bottle,camping drinkware,HydroTrail,21.99,8.40,95,HydroTrail Partners,true
+P008,CG-CASE-001,Hard Shell Camping Utensil Case,storage,TrailMate,14.99,5.10,85,Outdoor Supply Co,true
+P009,CG-KIT-001,Family Camping Dinnerware Bundle,camping dinnerware,BaseCamp Goods,54.99,25.50,40,BaseCamp Wholesale,true
+P010,CG-ACC-001,Reusable Camp Cleaning Cloth Set,camping accessories,EcoTrail,8.99,2.40,180,EcoTrail Supply,true
+P011,CG-COOK-003,Portable Camping Kettle,camping cookware,NorthPeak,29.99,13.20,58,NorthPeak Distribution,true
+P012,CG-UTL-003,Lightweight Outdoor Knife and Fork Set,camping utensils,SummitLite,15.99,5.95,102,Summit Wholesale,true

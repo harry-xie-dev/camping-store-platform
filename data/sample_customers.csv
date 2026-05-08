@@ -1,0 +1,19 @@
+customer_id,first_name,last_name,email,city,state,signup_date,acquisition_channel
+C001,Emily,Chen,emily.chen@example.com,Los Angeles,CA,2026-01-08,Google Ads
+C002,Daniel,Kim,daniel.kim@example.com,San Jose,CA,2026-01-12,Organic Search
+C003,Sophia,Martinez,sophia.martinez@example.com,San Diego,CA,2026-01-19,Instagram
+C004,Kevin,Nguyen,kevin.nguyen@example.com,Seattle,WA,2026-01-23,Referral
+C005,Rachel,Wong,rachel.wong@example.com,Irvine,CA,2026-01-30,Email Campaign
+C006,Jason,Lee,jason.lee@example.com,Berkeley,CA,2026-02-04,Organic Search
+C007,Mia,Johnson,mia.johnson@example.com,Portland,OR,2026-02-10,Instagram
+C008,Brian,Patel,brian.patel@example.com,Fremont,CA,2026-02-16,Google Ads
+C009,Olivia,Garcia,olivia.garcia@example.com,Phoenix,AZ,2026-02-22,Referral
+C010,Ethan,Brown,ethan.brown@example.com,Sacramento,CA,2026-03-01,Email Campaign
+C011,Grace,Liu,grace.liu@example.com,Austin,TX,2026-03-05,Organic Search
+C012,Andrew,Wilson,andrew.wilson@example.com,Denver,CO,2026-03-09,Google Ads
+C013,Natalie,Davis,natalie.davis@example.com,San Francisco,CA,2026-03-15,Instagram
+C014,Ryan,Taylor,ryan.taylor@example.com,Las Vegas,NV,2026-03-21,Referral
+C015,Chloe,Anderson,chloe.anderson@example.com,Pasadena,CA,2026-03-27,Email Campaign
+C016,Justin,Moore,justin.moore@example.com,Oakland,CA,2026-04-02,Organic Search
+C017,Hannah,Thomas,hannah.thomas@example.com,Tucson,AZ,2026-04-06,Instagram
+C018,Eric,White,eric.white@example.com,Long Beach,CA,2026-04-12,Google Ads
