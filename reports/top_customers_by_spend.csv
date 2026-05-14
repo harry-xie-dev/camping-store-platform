@@ -1,0 +1,11 @@
+customer_id,customer_name,email,city,state,completed_orders,total_spend
+C016,Justin Moore,justin.moore@example.com,Oakland,CA,2,299.93
+C014,Ryan Taylor,ryan.taylor@example.com,Las Vegas,NV,3,263.74
+C013,Natalie Davis,natalie.davis@example.com,San Francisco,CA,2,213.96
+C005,Rachel Wong,rachel.wong@example.com,Irvine,CA,1,164.14
+C009,Olivia Garcia,olivia.garcia@example.com,Phoenix,AZ,2,152.08
+C006,Jason Lee,jason.lee@example.com,Berkeley,CA,1,131.33
+C004,Kevin Nguyen,kevin.nguyen@example.com,Seattle,WA,1,93.04
+C002,Daniel Kim,daniel.kim@example.com,San Jose,CA,2,79.27
+C017,Hannah Thomas,hannah.thomas@example.com,Tucson,AZ,1,74.39
+C012,Andrew Wilson,andrew.wilson@example.com,Denver,CO,1,68.37

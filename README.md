@@ -44,14 +44,37 @@ The planned stack may evolve as the project develops:
 camping-store-platform/
 |-- analytics/      # Future analytics notebooks, SQL queries, and reports
 |-- backend/        # Future API, service logic, and database integration
-|-- data/           # Future sample or seed data for local development
+|-- data/           # Sample CSV data and local SQLite database
 |-- docs/           # Project planning and design documentation
 |-- frontend/       # Future user interface for store operations
+|-- reports/        # Generated CSV business reports
+|-- scripts/        # Data generation, database loading, validation, analytics, and reporting scripts
 `-- README.md       # Main project documentation
 ```
 
+## Current Feature
+
+- Generate synthetic sample data for products, customers, orders, order items, and marketing campaigns.
+- Load CSV data into a local SQLite database.
+- Inspect SQLite database tables, columns, and sample rows for debugging.
+- Validate database integrity, including row counts, foreign key consistency, line item totals, and order totals.
+- Run basic sales analytics queries from SQLite.
+    - Revenue by product category
+    - Top products by revevnue
+    - Top customers by spending
+    - Monthly revenue trend
+
+## How to Run
+
+- Generate sample data: python scripts/generate_sample_data.py
+- Load CSV files into SQLite: python scripts/load_csv_to_sqlite.py
+- Validate the database: python scripts/validate_database.py
+- Run basic analytics: python scripts/run_basic_analytics.py
+- Generate CSV reports: python scripts/generate_reports.py
+- Generated reports are saved in the reports/ directory.
+
 ## Current Status
 
-Current phase: initial documentation and project planning.
+Current phase: local data platform prototype.
 
-No backend, frontend, database, or analytics implementation has been added yet. The repository currently defines the business scenario, MVP requirements, and initial database design direction.
+The project currently includes simulated CSV data, a local SQLite database, database validation scripts, basic sales analytics queries, automated CSV report generation, and database inspection tooling. Backend, frontend, dashboard, and production database components are planned for later phases.
