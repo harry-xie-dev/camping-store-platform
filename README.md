@@ -2,79 +2,138 @@
 
 ## Project Overview
 
-Camping Store Data Platform is a portfolio project that models an end-to-end data platform for a simulated small outdoor camping tableware store. The project is designed to demonstrate practical data engineering, backend, frontend, and analytics planning around product tracking, customer records, order activity, and future marketing analysis.
+Camping Store Data Platform is an end-to-end portfolio data project for a simulated small outdoor camping tableware store. The project models how a small business can organize operational data, store it in a database, validate data quality, run business analytics, and generate reports that are easier for non-technical users to understand.
 
-This repository is not connected to a real company, real customers, or a production system. All future data, workflows, and analysis should be treated as simulated project material.
+This repository is not connected to a real company, real customers, or a production system. All data is simulated for project and portfolio purposes.
 
 ## Business Problem
 
-A small camping tableware store needs a better way to organize operational data across products, customers, orders, and marketing activity. Without a structured data platform, it is difficult to answer basic business questions such as:
+A small camping tableware store needs a better way to track products, customers, orders, and sales performance. Without a structured data platform, the business owner would have difficulty answering basic operational questions such as:
 
-- Which products are available and how are they categorized?
-- Who has placed orders?
-- What items are included in each order?
-- Which marketing campaigns are associated with customer or order activity?
-- What data should be collected now to support future analytics?
+- Which product categories generate the most revenue?
+- Which products are the top sellers?
+- Which customers contribute the most completed-order revenue?
+- How does revenue change month by month?
+- Are the database records consistent and reliable enough for analysis?
 
-## Core Features
+This project solves the problem by building a local data pipeline that turns raw CSV data into validated database tables, SQL-based analytics, CSV reports, and PNG charts.
 
-Planned platform capabilities include:
+## Current Features
 
-- Product catalog tracking for camping tableware items.
-- Customer data management for simulated customer profiles.
-- Order and order item tracking.
-- Initial marketing campaign data structure.
-- Backend API planning for future data access.
-- Frontend planning for future operational views.
-- Analytics planning for future reporting and business questions.
+The project currently includes:
 
-## Planned Tech Stack
+- Synthetic sample data generation for products, customers, orders, order items, and marketing campaigns.
+- CSV-to-SQLite loading pipeline.
+- SQLite database inspection tooling for debugging tables, columns, and sample rows.
+- Database validation checks for:
+  - Row counts
+  - Foreign key relationships
+  - Order item line totals
+  - Order subtotal consistency
+- SQL-based business analytics for:
+  - Revenue by product category
+  - Top products by revenue
+  - Top customers by completed-order spending
+  - Monthly revenue trend
+- Automated CSV report generation.
+- Automated PNG chart generation for visual business reporting.
 
-The planned stack may evolve as the project develops:
 
-- Backend: Python, FastAPI
-- Database: PostgreSQL
-- Frontend: React or Next.js
-- Analytics: SQL, Python, notebooks, dashboard tooling
-- Development tools: Git, Docker, environment-based configuration
+## Data Pipeline
+
+```text
+Sample Data Generation
+        |
+        v
+CSV Files in data/
+        |
+        v
+SQLite Database
+        |
+        v
+Validation + Analytics SQL
+        |
+        v
+CSV Reports in reports/
+        |
+        v
+PNG Charts in reports/charts/
+```
+
 
 ## Project Structure
 
+
 ```text
 camping-store-platform/
-|-- analytics/      # Future analytics notebooks, SQL queries, and reports
-|-- backend/        # Future API, service logic, and database integration
-|-- data/           # Sample CSV data and local SQLite database
-|-- docs/           # Project planning and design documentation
-|-- frontend/       # Future user interface for store operations
-|-- reports/        # Generated CSV business reports
-|-- scripts/        # Data generation, database loading, validation, analytics, and reporting scripts
-`-- README.md       # Main project documentation
+|-- analytics/              # Future analytics notebooks and deeper analysis
+|-- backend/                # Future API and service layer
+|-- data/                   # Sample CSV data and local SQLite database
+|-- docs/                   # Project planning and database design documentation
+|-- frontend/               # Future user interface
+|-- reports/                # Generated CSV business reports
+|   `-- charts/             # Generated PNG charts
+|-- scripts/                # Data generation, loading, validation, analytics, and reporting scripts
+`-- README.md               # Main project documentation
 ```
 
-## Current Feature
 
-- Generate synthetic sample data for products, customers, orders, order items, and marketing campaigns.
-- Load CSV data into a local SQLite database.
-- Inspect SQLite database tables, columns, and sample rows for debugging.
-- Validate database integrity, including row counts, foreign key consistency, line item totals, and order totals.
-- Run basic sales analytics queries from SQLite.
-    - Revenue by product category
-    - Top products by revevnue
-    - Top customers by spending
-    - Monthly revenue trend
+## Key Reports
+
+
+```text
+reports/
+|-- revenue_by_category.csv
+|-- top_products_by_revenue.csv
+|-- top_customers_by_spend.csv
+|-- monthly_revenue_trend.csv
+```
+
+The project also generates matching PNG charts under:
+
+```text
+|-- reports/charts/
+```
+
 
 ## How to Run
 
-- Generate sample data: python scripts/generate_sample_data.py
-- Load CSV files into SQLite: python scripts/load_csv_to_sqlite.py
-- Validate the database: python scripts/validate_database.py
-- Run basic analytics: python scripts/run_basic_analytics.py
-- Generate CSV reports: python scripts/generate_reports.py
-- Generated reports are saved in the reports/ directory.
+From the project root directory, run the scripts in this order:
 
-## Current Status
+```text
+python scripts/generate_sample_data.py
+python scripts/load_csv_to_sqlite.py
+python scripts/inspect_db.py
+python scripts/validate_database.py
+python scripts/run_basic_analytics.py
+python scripts/generate_reports.py
+python scripts/generate_charts.py
+```
 
-Current phase: local data platform prototype.
 
-The project currently includes simulated CSV data, a local SQLite database, database validation scripts, basic sales analytics queries, automated CSV report generation, and database inspection tooling. Backend, frontend, dashboard, and production database components are planned for later phases.
+Generated CSV reports are saved in:
+
+```text
+|-- reports/
+```
+
+Generated PNG are saved in:
+
+```text
+|-- reports/charts/
+```
+
+
+## Current status:
+
+Current phase: local analytics platform prototype.
+
+The project currently supports a complete local workflow from simulated business data to database storage, validation, analytics, CSV reports, and PNG chart generation.
+
+Planned future improvements include:
+
+FastAPI backend for accessing business data through API endpoints.
+PostgreSQL migration for a more production-like database setup.
+Dashboard or frontend interface for viewing reports.
+More advanced marketing and customer behavior analysis.
+Docker-based local development environment.
