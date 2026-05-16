@@ -111,6 +111,17 @@ python scripts/generate_charts.py
 ```
 
 
+## How to Run the Data Pipeline
+
+This project includes a one-command pipeline that regenerates the sample data, loads it into SQLite, validates the database, creates CSV reports, and generates charts.
+
+From the project root, run:
+
+``` text
+python scripts/run_pipeline.py
+```
+
+
 Generated CSV reports are saved in:
 
 ```text
