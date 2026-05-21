@@ -1,64 +1,49 @@
-# Camping Store Sales Analytics Report
+# Camping Store Business Summary Report
 
-## Overview
+Generated on: 2026-05-21 10:06:18
 
-This report summarizes key sales insights from the camping store sample database. The analysis focuses on product category revenue, top-selling products, high-value customers, and monthly revenue trends.
+## 1. Executive Summary
 
-The goal of this report is to help a small business owner understand which products and customer segments are driving revenue, and to provide a foundation for future inventory, marketing, and customer retention decisions.
+This report summarizes the sales performance of the camping store sample dataset. It includes key business metrics, top-performing categories, products, customers, and monthly revenue trends.
 
-## Key Findings
+## 2. Key Metrics
 
-### 1. Revenue by Product Category
+| Metric | Value |
+|---|---:|
+| Total Orders | 32 |
+| Completed Orders | 18 |
+| Total Revenue | $1,621.18 |
+| Average Order Value | $90.07 |
 
-The revenue by category chart shows how sales are distributed across different product categories. This helps identify which categories contribute the most to overall revenue.
+## 3. Order Status Breakdown
 
-Business use:
-- Prioritize inventory planning for stronger categories.
-- Review weaker categories to decide whether they need better pricing, promotion, or product changes.
-- Use category-level trends to support purchasing decisions.
+- completed: 18
+- refunded: 6
+- cancelled: 5
+- pending: 3
 
-### 2. Top Products by Revenue
+## 4. Top Performers
 
-The top products by revenue chart identifies the products generating the highest sales. These products are important because they directly affect revenue performance.
+| Area | Result | Revenue / Spending |
+|---|---|---:|
+| Top Category | camping cookware | $644.79 |
+| Top Product | Compact Camping Cookware Kit | $239.94 |
+| Top Customer | Justin Moore | $299.93 |
 
-Business use:
-- Keep high-performing products in stock.
-- Feature top products in marketing campaigns.
-- Use top products as reference points when selecting future products.
+## 5. Monthly Revenue Trend
 
-### 3. Top Customers by Spend
+- 2026-01: $180.53
+- 2026-02: $261.54
+- 2026-03: $608.91
+- 2026-04: $570.20
 
-The top customers by spend chart highlights customers who have contributed the most completed-order revenue.
+## 6. Business Observations
 
-Business use:
-- Identify high-value customers for loyalty programs.
-- Create targeted promotions for repeat customers.
-- Support customer retention strategies.
+- The highest-performing category is **camping cookware**, generating $644.79 in completed-order revenue.
+- The top product is **Compact Camping Cookware Kit**, generating $239.94.
+- The top customer is **Justin Moore**, with total completed-order spending of $299.93.
+- Revenue increased from $180.53 in 2026-01 to $570.20 in 2026-04.
 
-### 4. Monthly Revenue Trend
+## 7. Notes
 
-The monthly revenue trend chart shows how revenue changes over time. This helps the business understand whether sales are increasing, decreasing, or fluctuating.
-
-Business use:
-- Monitor business growth over time.
-- Detect seasonal patterns or unusual revenue changes.
-- Support monthly planning and performance reviews.
-
-## Recommendations
-
-Based on the current analysis, the business should focus on:
-
-1. Monitoring top revenue-generating products and ensuring they remain available.
-2. Reviewing lower-performing categories to determine whether they need better promotion or inventory adjustment.
-3. Creating targeted offers for high-value customers.
-4. Continuing to track monthly revenue to understand sales trends over time.
-
-## Limitations
-
-This analysis is based on sample data, so the findings should not be treated as final business conclusions. However, the reporting pipeline can be reused with real business data in the future.
-
-Future improvements could include:
-- Adding profit margin analysis.
-- Tracking customer repeat purchase behavior.
-- Comparing marketing campaign performance.
-- Building a dashboard for interactive filtering and visualization.
+This report is generated automatically from the SQLite database. Only completed orders are counted as revenue to avoid overstating sales performance from canceled or incomplete orders.

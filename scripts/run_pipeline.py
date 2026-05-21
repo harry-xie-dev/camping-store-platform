@@ -14,6 +14,7 @@ PIPELINE_STEPS = [
     ("Validate SQLite database", SCRIPTS_DIR / "validate_database.py"),
     ("Generate CSV reports", SCRIPTS_DIR / "generate_reports.py"),
     ("Generate charts", SCRIPTS_DIR / "generate_charts.py"),
+    ("Generate summary report", SCRIPTS_DIR / "generate_summary_report.py"),
 ]
 
 
