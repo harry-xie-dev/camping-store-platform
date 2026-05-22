@@ -22,7 +22,7 @@ This project solves the problem by building a local data pipeline that turns raw
 
 The project currently includes:
 
-- Synthetic sample data generation for products, customers, orders, order items, and marketing campaigns.
+- Synthetic sample data generation for products, customers, orders, and order items.
 - CSV-to-SQLite loading pipeline.
 - SQLite database inspection tooling for debugging tables, columns, and sample rows.
 - Database validation checks for:
@@ -100,6 +100,23 @@ The project also generates matching PNG charts under:
 
 From the project root directory, run the scripts in this order:
 
+``` text
+python scripts/run_pipeline.py
+```
+
+This command runs the full local data workflow:
+1. Generate sample CSV data
+2. Load CSV files into SQLite
+3. Inspect database tables
+4. Validate data quality and relationships
+5. Run SQQL-based analytics
+6. Generate CSV reports
+7. Generate PNG charts
+
+### Optional: Run Scripts Manually
+
+The pipeline can also to be run step by step for debugging:
+
 ```text
 python scripts/generate_sample_data.py
 python scripts/load_csv_to_sqlite.py
@@ -109,18 +126,6 @@ python scripts/run_basic_analytics.py
 python scripts/generate_reports.py
 python scripts/generate_charts.py
 ```
-
-
-## How to Run the Data Pipeline
-
-This project includes a one-command pipeline that regenerates the sample data, loads it into SQLite, validates the database, creates CSV reports, and generates charts.
-
-From the project root, run:
-
-``` text
-python scripts/run_pipeline.py
-```
-
 
 Generated CSV reports are saved in:
 
@@ -135,7 +140,22 @@ Generated PNG are saved in:
 ```
 
 
-## Current status:
+## Technical Skills Demonstrated
+
+This project demonstrates the following data and engineering skills:
+
+- Python scripting for data generation, ETL-style workflow automation, and report generation
+- SQLite database design for structured business data storage
+- SQL joins, grouping, aggregation, filtering, and revenue analysis
+- Data validation for row counts, foreign key relationships, line totals, and subtotal consistency
+- Reproducible one-command pipeline design using `run_pipeline.py`
+- CSV-based reporting for business analytics outputs
+- PNG chart generation for non-technical business users
+- Project documentation through README, database design notes, technical notes, and interview talking points
+- Git/GitHub project organization with separated `data/`, `scripts/`, `docs/`, and `reports/` directories
+
+
+## Current Status
 
 Current phase: local analytics platform prototype.
 
@@ -143,8 +163,10 @@ The project currently supports a complete local workflow from simulated business
 
 Planned future improvements include:
 
-FastAPI backend for accessing business data through API endpoints.
-PostgreSQL migration for a more production-like database setup.
-Dashboard or frontend interface for viewing reports.
-More advanced marketing and customer behavior analysis.
-Docker-based local development environment.
+- Add marketing campaign data to analyze promotion effectiveness, customer acquisition channels, and campaign-driven revenue.
+- Add a FastAPI backend for accessing business data through API endpoints.
+- Migrate from SQLite to PostgreSQL for a more production-like database setup.
+- Build a dashboard or frontend interface for viewing reports.
+- Add marketing campaign data to analyze promotion effectiveness, customer acquisition channels, and campaign-driven revenue.
+- Add more advanced customer behavior analysis, such as repeat purchase patterns and customer segmentation.
+- Add a Docker-based local development environment.
