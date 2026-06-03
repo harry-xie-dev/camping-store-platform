@@ -65,8 +65,10 @@ REPORT_QUERIES = {
         SELECT
             SUBSTR(o.order_date, 1, 7) AS order_month,
             COUNT(DISTINCT o.order_id) AS completed_orders,
-            ROUND(SUM(o.total), 2) AS total_revenue
+            ROUND(SUM(oi.line_total), 2) AS total_revenue
         FROM orders o
+        JOIN order_items oi
+             ON o.order_id = oi.order_id
         WHERE o.status = 'completed'
         GROUP BY order_month
         ORDER BY order_month;
